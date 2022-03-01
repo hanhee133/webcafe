@@ -1,0 +1,70 @@
+@import url(./normalize.css);
+@import url(./reset.css);
+
+/* 공통 스타일 */
+*, *::before, *::after{
+    box-sizing: border-box;
+}
+
+/* 공통 레이아웃 */
+.header, .visual, .main, .slogan, .footer__inner{
+    width: 940px;
+    margin: 0 auto;
+
+}
+
+/* 헤더 */
+.header{
+    background-color: yellow;
+    height: 120px;
+    overflow: hidden;
+}
+
+
+/* 비주얼 */
+.visual{
+    background-color: pink;
+    height: 110px;
+}
+
+
+/* 메인 콘텐츠 */
+.main{
+    background-color: skyblue;
+    /* min-height: 350px; */
+    /* display: flex; */
+    /* padding: 30px;
+    gap: 30px; */
+
+}
+
+.group1{
+    width: 250px;
+    background-color: salmon;
+    
+}
+
+.group2{
+    width: 180px;
+    background-color: tan;
+}
+
+.group3{
+    /* width: 190px; */
+    background-color: teal;
+}
+
+/* 슬로건 */
+.slogan{
+    background-color: lime;
+    height: 100px;
+}
+
+
+/* 푸터 */
+.footer__inner{
+    background-color: orange;
+    height: 100px;
+}
+
+
