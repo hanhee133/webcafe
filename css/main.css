@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+.sr-only{
+    display: none;
+}
+
 /* 공통 레이아웃 */
 .header, .visual, .main, .slogan, .footer__inner{
     width: 940px;
@@ -19,6 +23,31 @@
     height: 120px;
     overflow: hidden;
 }
+
+
+.header__logo{
+    width: 165px;
+    height: 35px;
+    position: absolute;
+    top: 45px;
+    left: 65px;
+}
+
+.member{
+    text-align: right;
+    
+}
+
+.member__item{
+    padding: 8px 10px;
+    text-align: center;
+}
+
+.navigation{
+    display: block;
+}
+
+
 
 
 /* 비주얼 */
@@ -37,6 +66,10 @@
     gap: 30px; */
 
 }
+
+
+
+
 
 .group1{
     width: 250px;
