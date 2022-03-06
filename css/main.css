@@ -10,6 +10,10 @@
     display: none;
 }
 
+.default{
+    display: none;
+}
+
 /* 공통 레이아웃 */
 .header, .visual, .main, .slogan, .footer__inner{
     width: 940px;
@@ -17,11 +21,17 @@
 
 }
 
+.container{
+    background-color:#ccc;
+}
+
 /* 헤더 */
 .header{
-    background-color: yellow;
-    height: 120px;
-    overflow: hidden;
+    position: relative;
+    background-color:#fff;
+    padding:0px 30px 40px;
+    border-radius:0px 0px 15px 15px;
+    
 }
 
 
@@ -30,6 +40,7 @@
     height: 35px;
     position: absolute;
     top: 45px;
+    left: 65px;
 
 }
 
@@ -46,25 +57,67 @@
 
 .navigation{
     display: block;
+    
 }
 
+.menu{
+    display: flex;
+    justify-content: center;
+    border-color:#000;
+    border-radius:0px 0px 5px 5px;
+    border-style: solid none none;
+    border-width: 2px 0px 0px;
+    color:#181818;
+    font-size:14px;
+    padding-left: 200px;
+    padding:0px 0px 0px 225px;
+    background: linear-gradient(to bottom, #e8852e 0%,#ed552f 35%,#ed552f 70%,#e8852e 100%);
+}
 
+.menu-item{
+    float: left;
+}
+
+.menu-button{
+    cursor: pointer;
+    display: block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 1rem;
+    padding: 0 20px;
+    line-height: 45px;
+    border: 0;
+    background: transparent;
+    border-left: 2px solid rgba(255,255,255,.5);
+    text-shadow: 1px 0 0 #000, 0 1px 0 #000, -1px 0 0 #000, 0 -1px 0 #000;
+
+}
+
+.is-active{
+
+}
 
 
 /* 비주얼 */
 .visual{
-    background-color: pink;
+    
     height: 110px;
+}
+
+.visual__text{
+    text-align: center;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 22px;
 }
 
 
 /* 메인 콘텐츠 */
 .main{
     background-color: skyblue;
-    /* min-height: 350px; */
-    /* display: flex; */
-    /* padding: 30px;
-    gap: 30px; */
+    min-height: 350px;
+    display: flex;
+    padding: 30px;
+    gap: 30px;
 
 }
 
@@ -73,18 +126,80 @@
 
 
 .group1{
+    display: flex;
     width: 250px;
-    background-color: salmon;
+    
     
 }
 
+.main fieldset{
+    position: relative;
+}
+
+.login{
+    width: 100%;
+    background-color:#ed552f;
+    border-radius: 5px;
+    box-shadow:#aaaaaa 5px 5px 0px 0px;
+    color:#181818;
+    font-size:14px;
+    padding:10px;
+}
+
+.login-title{
+    color: #ff0;
+    font-weight: 700;
+    font-size: 0.938rem;
+    text-indent: 10px;
+}
+
+.login-form{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 10px 10px 10px 10px;
+    margin-top: 10px;
+}
+
+.login-form input{
+    width: 100px;
+    height: 22px;
+    border: 1px solid #aaa;
+    padding: 4px 1px 1px 5px;
+}
+    
+.login-form label{
+    display: inline-block;
+    width: 4em;
+}
+
+.login-form .user-email{
+    margin-bottom: 6px;
+}
+
+.button-login{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 50px;
+    border: 1px solid #e8852e;
+    background-color: #ed552f;
+    color: #fff;
+    padding: 0;
+    font-size: 0.75rem;
+    border-radius: 3px;
+}
+
+
 .group2{
-    width: 180px;
+    display: flex;
+    width: 380px;
     background-color: tan;
 }
 
 .group3{
-    /* width: 190px; */
+    display: flex;
+    width: 190px;
     background-color: teal;
 }
 
@@ -99,6 +214,11 @@
 .footer__inner{
     background-color: orange;
     height: 100px;
+}
+
+.footer{
+    background: linear-gradient(to bottom, #ccc, #eee 60%, #fff 100%);
+    background-color: #ccc;
 }
 
 
